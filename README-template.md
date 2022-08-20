@@ -94,3 +94,10 @@ Happy building awesome websites!
 ```
 
 Commit this to the GitHub repo as the Initial Import.
+
+> 3. GitHub Pages Deployment
+
+Update the `docusaurus.config.js` settings using the guidance for [Deployment to GitHub Pages](https://docusaurus.io/docs/deployment#deploying-to-github-pages). 
+
+_See: FIXME #1, #2, #3_.
+
