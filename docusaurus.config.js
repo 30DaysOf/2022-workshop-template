@@ -24,6 +24,8 @@ const config = {
   // Else delete these attributes.
   organizationName: '30DaysOf', 
   projectName: 'template', 
+  trailingSlash: false,
+  deploymentBranch: `gh-pages`, // default = gh-pages
 
   // FIXME #3:
   // Customize for your locales of interest
