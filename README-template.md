@@ -139,8 +139,17 @@ On success above, GitHub Pages Settings page will have a message like:
  
  "_Your site was last deployed to the github-pages environment by the pages build and deployment workflow. [Learn more about deploying to GitHub Pages using custom workflows](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-with-a-custom-github-actions-workflow)_"
 
-Let's automate this using the [GitHub Actions provided by Docusaurus](https://docusaurus.io/docs/deployment#triggering-deployment-with-github-actions).
+**Note**: The manual deployment would have setup a `pages-build-deployment` action that will run automatically on every commit. However, it does not have an explicit workflow file that you can then customize later as needed. 
+
+Let's automate this using the [GitHub Actions provided by Docusaurus](https://docusaurus.io/docs/deployment#triggering-deployment-with-github-actions) instead.
  * Add [.github/workflows/deploy.yml](.github/workflows/deploy.yml) to trigger on every push (commit) to main
  * Add [.github/workflows/test-deploy.yml](.github/workflows/deploy.yml) to trigger on every pull (request) to main
 
  The default workflow files provided by Docusaurus use `yarn` - I've updated them to use `npm`. It also doesn't hurt to update `docusaurus.config.js` to explicitly configure the [_deploymentBranch_](https://docusaurus.io/docs/api/docusaurus-config#deploymentBranch) and [_trailingSlash_](https://docusaurus.io/docs/deployment#trailing-slashes) settings
+
+ Commit the changes to auto-trigger the default workflow for deployment on push. At this point your [Actions dashboard](https://github.com/30DaysOf/template/actions) will show three action workflows listed.
+  * `Deploy to GitHub Pages` (from Docusaurus, on push)
+  * `Test deployment` (from Docusaurus, on pull)
+  * `pages-build-deployment` (from manual deploy)
+
+  Since the first and third actions do the same thing, we can delete the third one (simply delete the past manual run), leaving the first workflow as the default deploy action for commits.
