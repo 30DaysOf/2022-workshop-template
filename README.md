@@ -1,5 +1,6 @@
 # Template for #30Days Projects
 
+> 🚨 **Work in Progress - Not ready for use**
 
 Read [About this site](SETUP.md) to learn how it was setup.
 
