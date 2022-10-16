@@ -1,0 +1,23 @@
+name: Track Template Usage
+
+# Runs nightly, or can be triggered on demand from dashboard
+on:
+  schedule: 
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+# Uses the "Tenplate Repository Usage Action"
+# https://github.com/marketplace/actions/template-repository-usage-action
+#    Make sure repo README.md has a marked out section
+#    for where the stats should be updated
+#    See https://github.com/maael/next-template for example
+jobs:
+  get_repositories_list:
+    if: github.repository == '30DaysOf/template'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Template Repository Usage Action
+        uses: maael/template-repository-usage-action@v1.1.0
+        with:
+          token: ${{ secrets.GH_TOKEN }}

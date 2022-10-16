@@ -9,3 +9,12 @@ However, I realized this was a good way to plan and execute _any_ month-long pro
  - Identify 30 tips or tricks for productive use of a tool or framework
 
 This template is meant to make it easier to plan and document your #30Day learning journey with a GitHub-Pages hosted website.
+
+---
+
+## Projects Using Template
+
+Tracking usage using [this GitHub Action](https://github.com/maael/template-repository-usage-action)
+
+<!-- TEMPLATE_LIST_START -->
+<!-- TEMPLATE_LIST_END -->
