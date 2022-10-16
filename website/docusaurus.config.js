@@ -22,8 +22,8 @@ const config = {
   tagline: 'Plan Roadmaps - Document Progress',
 
   // CONIFIG; GitHub Pages
-  url: 'https://30DaysOf.github.io/template/',
-  baseUrl: '/',  // template/
+  url: 'https://30DaysOf.github.io',
+  baseUrl: '/template/',  // template/
   favicon: 'img/favicon.ico',
   organizationName: 'f30DaysOf', 
   projectName: 'template', 
