@@ -100,39 +100,29 @@ const config = {
 
         items: [
           {
-            type: 'doc',
-            position: 'left',
-            docId: 'week/02',
-            label: 'Week 1',
-          },
-          {
-            type: 'doc',
-            position: 'left',
-            docId: 'week/09',
-            label: 'Week 2',
-          },
-          {
-            type: 'doc',
-            position: 'left',
-            docId: 'week/16',
-            label: 'Week 3',
-          },
-          {
-            type: 'doc',
-            position: 'left',
-            docId: 'week/23',
-            label: 'Week 4',
-          },
-          {
-            to: 'landing',
-            label: 'Home',
-            position: 'right',
-          },
-          {
             href: 'https://github.com/30DaysOf/template',
             position: 'right',
             className: 'header-github-link',
             'aria-label': 'GitHub repository',
+          },
+
+          {
+            type: 'doc',
+            position: 'left',
+            label: 'Concepts',
+            docId: 'concepts/01',
+          },
+          {
+            type: 'doc',
+            position: 'left',
+            label: 'Tutorials',
+            docId: 'tutorials/toc',
+          },
+          {
+            type: 'doc',
+            position: 'left',
+            label: 'Solutions',
+            docId: 'solutions/01',
           },
         ],
       },
