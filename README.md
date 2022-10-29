@@ -17,8 +17,7 @@ This template is meant to make it easier to plan and document your #30Day learni
 Tracking usage using [this GitHub Action](https://github.com/maael/template-repository-usage-action)
 
 <!-- TEMPLATE_LIST_START -->
-# 2 Repositories using template
+# 1 Repositories using template
 
-* [30DaysOf/playwright](https://github.com/30DaysOf/playwright)
 * [30DaysOf/nextjs](https://github.com/30DaysOf/nextjs)
 <!-- TEMPLATE_LIST_END -->
