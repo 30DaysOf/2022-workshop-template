@@ -48,4 +48,7 @@ Note that Docusaurus supports content in Markdown _and_ MDX (JSX-flavored Markdo
 Tracking usage using [this GitHub Action](https://github.com/maael/template-repository-usage-action)
 
 <!-- TEMPLATE_LIST_START -->
+# 1 Repositories using template
+
+* [30DaysOf/nextjs](https://github.com/30DaysOf/nextjs)
 <!-- TEMPLATE_LIST_END -->
