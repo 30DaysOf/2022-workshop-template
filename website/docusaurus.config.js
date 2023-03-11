@@ -23,10 +23,10 @@ const config = {
 
   // CONIFIG; GitHub Pages
   url: 'https://30DaysOf.github.io',
-  baseUrl: '/template/',  // template/
+  baseUrl: '/workshop-template/',  // template/
   favicon: 'img/favicon.ico',
-  organizationName: 'f30DaysOf', 
-  projectName: 'template', 
+  organizationName: '30DaysOf', 
+  projectName: 'workshop-template', 
   deploymentBranch: 'gh-pages',
 
   // CONFIG: Early detection for site health
@@ -100,7 +100,7 @@ const config = {
 
         items: [
           {
-            href: 'https://github.com/30DaysOf/template',
+            href: 'https://github.com/30DaysOf/workshop-template',
             position: 'right',
             className: 'header-github-link',
             'aria-label': 'GitHub repository',
